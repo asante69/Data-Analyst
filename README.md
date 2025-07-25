@@ -52,3 +52,18 @@ Get help: [Post in our discussion board](https://github.com/orgs/skills/discussi
 &copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
 
 </footer>
+
+## LangGraph Text Analysis Pipeline
+
+This repository includes `langgraph_pipeline.py`, a script that demonstrates building a text analysis workflow using LangGraph. The pipeline classifies text, extracts entities, generates a summary, and performs sentiment analysis. Conditional edges ensure entity extraction only occurs for news or research articles.
+
+### Running the script
+1. Install the required packages:
+   ```bash
+   pip install langgraph langchain langchain-openai python-dotenv
+   ```
+2. Create a `.env` file with your `OPENAI_API_KEY`.
+3. Execute the pipeline:
+   ```bash
+   python langgraph_pipeline.py
+   ```
